@@ -1,0 +1,283 @@
+/**
+ * @name Chill
+ * @author n0bl3ss
+ * @authorLink https://vk.com/n0bl3ss
+ * @version 0.9.3
+ * @invite DrfX6286kF
+ * @description stress doesn't really goes with your fit, try out chillax you wont regret it.
+ * @source https://github.com/warrayquipsome/Chillax
+ * @donate https://www.paypal.me/wqqt9
+*/
+
+/*
+     ⸙  ────     ────     ───── ❝ 𝐚𝐥𝐥 𝐫𝐢𝐠𝐡𝐭 𝐡𝐞𝐫𝐞 ❞ ─────    ────     ────  ⸙
+  ╭─ ━━━━━━━━━ ━━━━━━━ ━━━━━━━━━ -ˋˏ ༻🂡༺ ˎˊ- ━━━━━━━━━ ━━━━━━━ ━━━━━━━━━ ─╮
+          █████╗   ██╗  ██╗  ██╗  ██╗      ██╗       █████╗   ██╗  ██╗       
+         ██╔══██╗  ██║  ██║  ██║  ██║      ██║      ██╔══██╗  ╚██╗██╔╝       
+  ||     ██║  ╚═╝  ███████║  ██║  ██║      ██║      ███████║   ╚███╔╝      ||
+         ██║  ██╗  ██╔══██║  ██║  ██║      ██║      ██╔══██║   ██╔██╗        
+         ╚█████╔╝  ██║  ██║  ██║  ███████╗ ███████╗ ██║  ██║  ██╔╝╚██╗       
+          ╚════╝   ╚═╝  ╚═╝  ╚═╝  ╚══════╝ ╚══════╝ ╚═╝  ╚═╝  ╚═╝  ╚═╝       
+  ╰─ ━━━━━━━━━ ━━━━━━━ ━━━━━━━━━ -ˋˏ ༻-༺ ˎˊ- ━━━━━━━━━ ━━━━━━━ ━━━━━━━━━ ─╯
+
+*/
+
+/*chillax*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://warrayquipsome.github.io/Chillax/chillax.css');
+
+/*removable addons*/
+@import url("https://mwittrien.github.io/BetterDiscordAddons/Themes/EmojiReplace/base/Microsoft.css");
+@import url('https://mwittrien.github.io/BetterDiscordAddons/Themes/_res/SettingsIcons.css');
+@import url('https://nyri4.github.io/Discolored/main.css');
+@import url("https://warrayquipsome.github.io/Chillax/Addons/IconPackEdited.css");
+@import url("https://warrayquipsome.github.io/Chillax/Addons/AvatarOnlyMemberList.css");
+@import url("https://warrayquipsome.github.io/Chillax/Addons/FolderRedesign.css");
+
+/*additional addons*/ /*(remove the both * to use)*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Scada&display=swap');
+/* @import url("https://warrayquipsome.github.io/Chillax/Addons/SimpleLessLag.css"); */
+
+
+
+/*Chillax Roots*/
+:root{
+/*background image*/ /*(replace the link to use)*/
+  --background-image:var(--wallpaper);
+/*bg dev suggestions*/
+  --wallpaper: url('https://wallpaperaccess.com/full/2799204.jpg');
+/*modern background selection*/
+  --modern-dark-bg: url('https://cdn.discordapp.com/attachments/879158025087234098/1015856640530071572/97EAEB95-54C2-4AF3-B70B-5E94A851409.jpeg?size=4096');
+  --modern-light-bg: url('https://cdn.discordapp.com/attachments/879158025087234098/1015856640760754216/E98F8123-8B98-4961-90D7-DCC497A26E4.jpeg?size=4096');
+}
+
+
+/*window*/ /*dark mode*/
+:root.theme-dark {
+  --window-margin: 20px; /*must be above 20px*/
+  --window-colour: #0009;
+  --window-blur: 5px;
+  --window-border-radius: 10px;
+  --sidebar-colour: rgb(36, 36, 36);
+}
+/*window*/ /*light mode*/
+:root.theme-light {
+  --window-margin: 20px; /*must be above 20px*/
+  --window-colour: rgba(255, 255, 255, 0.6);
+  --window-blur: 5px;
+  --window-border-radius: 10px;
+  --sidebar-colour: rgb(209, 209, 209);
+}
+
+
+/*roots*/ /*both dark and light*/
+:root {
+  --user-name: "n0bl3ss";
+  --font-name: 'Poppins', 'Montserrat';
+  --font-size: 13px;
+     
+  
+/*glow radial status*/ /*must end in px*/
+  --rs-small-spacing:0px;
+  --rs-large-spacing:0px;
+  --rs-medium-spacing:0px;
+  --rs-small-width: 2.5px; 
+  --rs-medium-width: 3.5px; 
+  --rs-large-width: 4.5px; 
+  --rs-avatar-shape:50%;
+  --rs-online-color:#1df594;
+  --rs-idle-color:#faa61a;
+  --rs-dnd-color:#f04747;
+  --rs-offline-color:#636b75;
+  --rs-streaming-color:#643da7;
+  --rs-invisible-color:#636b75;
+  --rs-phone-visible:block;
+  --rs-phone-color:var(--rs-online-color);
+
+
+/*chillax colours rgb*/ /* Google RGB Picker: https://g.co/kgs/NoY83h */
+  --accentcolor:	  251, 84, 84;	
+/*chillax colours hex*/ /* Google RGB Picker: https://g.co/kgs/NoY83h */
+  --accentcolorV2:     #fb5454;
+     
+     
+/*settings modal root*/
+  --themelightsettingsmodalbackground: rgb(223, 223, 223);
+  --themedarksettingsmodalbackground: rgb(51, 49, 53);
+  --settingsmodalwidth: 960px;
+  --settingsmodalheight: 80vh;	
+}
+     
+/*discord transparency*//*roots*/ /*theme dark*/
+  .theme-dark {
+  --background-message-hover: rgba(255, 255, 255, 0.055);
+  --header-primary: #fff;
+  --header-secondary: #b9bbbe;
+  --text-normal: #dcddde;
+  --text-muted: #9d9d9d;
+  --channels-default: #8e9297;
+  --interactive-normal: #b9bbbe;
+  --interactive-hover: #dcddde;
+  --interactive-active: #fff;
+  --interactive-muted: #4f545c;
+  --background-primary: transparent;
+  --background-secondary: transparent;
+  --background-tertiary: transparent;
+  --background-accent: rgb(36, 36, 36);
+  --activity-card-background: transparent;
+  --deprecated-panel-background: transparent;
+}
+/*discord transparency*//*roots*/ /*theme light*/
+  .theme-light {
+  --background-message-hover: rgba(255, 255, 255, 0.055);
+  --header-primary: rgb(0, 0, 0);
+  --header-secondary: #3f3f3f;
+  --text-normal: #303030;
+  --text-muted: #333333;
+  --channels-default: #585b5e;
+  --interactive-normal: #3a3a3a;
+  --interactive-hover: #333333;
+  --interactive-active: rgb(0, 0, 0);
+  --interactive-muted: #4f545c;
+  --background-primary: transparent;
+  --background-secondary: transparent;
+  --background-tertiary: transparent;
+  --background-accent: rgb(27, 27, 27);
+  --activity-card-background: transparent;
+  --deprecated-panel-background: transparent;
+}
+
+/*friends grid banner colour*/
+.theme-dark{
+--FG-cards-banner-background: transparent!important;
+}
+.theme-light{
+--FG-cards-banner-background: transparent!important;
+} 
+
+/*  Other Code  */
+.theme-dark .wordmark-2u86JB::before {
+  content: "‏‏‎ n o b l 3 s s";
+  font-size: 12px;
+  font-family: "Poiret one" !important;
+  position: fixed;
+  color: rgb(255, 255, 255);
+  background: var(--window-colour);
+  backdrop-filter: blur(var(--window-blur));
+  border-radius: 5px;
+  padding: 7px 11px 7px 7px;
+  margin-left: 20px;
+  margin-top: 5px;
+  pointer-events: all;
+  transition: 0.5s ease-in-out;
+}
+.wordmark-2u86JB:hover:before {
+  content: "‏‏‎ n o b l 3 s s";
+  letter-spacing: 2px;
+}
+.theme-dark body:before {
+  content: "Пиребет " var(--user-name) "!";
+  z-index: 1000000000000000000000000;
+  color: #fff;
+  background-color: #0000007a;
+  top: 0px;
+  left: 52%;
+  position: absolute;
+  border-radius: 5px;
+  padding: 5px 15px;
+  transform: translate(-60%, -100%);
+  animation: chl 3s ease;
+  animation-delay: 4s;
+}
+.sidebar-nqHbhN .item-2GWPIy:hover:before {
+  transition: all 0.2s;
+  transform: rotateY(0deg);
+}
+.sidebar-nqHbhN .item-2GWPIy:before {
+  transition: all 0.2s;
+}
+.button-12Fmur {
+  margin-left: 10px;
+}
+.panels-3wFtMD > .container-YkUktl .flex-2S1XBF > :not(:last-child) {
+  opacity: 0% !important;
+  width: 50px;
+  transition: all 0.3s;
+}
+.panels-3wFtMD > .container-YkUktl:hover .flex-2S1XBF > :not(:last-child) {
+  opacity: 100% !important;
+  width: 32px;
+  margin-left: 5px;
+  margin-right: 22px;
+}
+.theme-dark .placeholder-1rCBhr::before {
+  content: "n0bl3ss imba а ты лох";
+  color: rgba(255, 255, 255, 0.2);
+  font-family: "Poppins", 'Montserrat';
+  font-size: 13px;
+  visibility: visible !important;
+}
+
+/* Theme Selected */
+#Chill-card .bd-name {
+  font-size: 100px;
+  text-align: left;
+}
+#Chill-card .bd-name::after {
+  font-size: 20px;
+  content: "Запушен";
+  display: block;
+  margin-top: -20px;
+  margin-left: 15px;
+}
+.theme-dark #Chill-card .bd-meta {
+  margin-left: 15px;
+  bottom: 25px;
+  color: rgb(226, 226, 226);
+}
+#Chill-card {
+  border: 2px solid var(--accentcolorV2);
+  box-shadow: 0 0 5px var(--accentcolorV2);
+}
+#Chill-card .bd-addon-header{
+border-bottom: 2px solid var(--accentcolorV2);
+box-shadow: 0 0 5px var(--accentcolorV2);
+}
+#Chill-card>*:not(#a#B) {
+  background: rgba(var(--accentcolor), .2)!important;
+}
+#Chill-card .bd-description {
+  display: none;
+}
+.theme-dark #Chill-card [href='https\:\/\/github.com/warrayquipsome/Chillax'] {
+  color: #fff!important;
+}
+.theme-dark #Chill-card [href='DrfX6286kF'] {
+  color: #fff!important;
+}
+.bd-grid-view #Chill-card .bd-name{
+  font-size: 70px;
+  text-align: left;
+}
+.bd-grid-view #Chill-card .bd-name::after {
+  font-size: 20px;
+  content: "activated";
+  display: block;
+  margin-top: -15px;
+  margin-left: 10px;
+}
+.theme-dark .bd-grid-view #Chill-card .bd-meta {
+  margin-left: -50px;
+  bottom: 25px;
+  color: rgb(226, 226, 226);
+}
+.theme-dark .sidebar-1tnWFu .content-yjf30S:after{
+content: 'Этот пробел для пользовотельского интерфейса. сорян если не красиво';
+font-size: 13px;
+color: rgba(255, 255, 255, 0.03);
+text-align: center;
+text-shadow: 0 0 15px #000;
+margin-top: 50px;
+height: 340px;
+display: block;
+}
